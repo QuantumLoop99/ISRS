@@ -1,14 +1,15 @@
-.register-container {
+.login-container {
     max-width: 400px;
     margin: 50px auto;
     padding: 20px;
-    border-radius: 8px;
     background: #f9f9f9;
+    border-radius: 8px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
   
   h2 {
     text-align: center;
+    margin-bottom: 20px;
     color: #333;
   }
   
@@ -17,12 +18,12 @@
   }
   
   label {
-    font-weight: bold;
     display: block;
     margin-bottom: 5px;
+    font-weight: bold;
   }
   
-  input, select {
+  input {
     width: 95%;
     padding: 10px;
     font-size: 14px;
@@ -33,12 +34,12 @@
   button {
     width: 100%;
     padding: 10px;
-    background: #a0a0a0;
-    color: white;
+    background-color: #a0a0a0;
+    color: #fff;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
   }
 
   button:hover {
@@ -46,22 +47,22 @@
   }
   
   button:disabled {
-    background: #a0a0a0;
+    background-color: #a0a0a0;
     cursor: not-allowed;
   }
   
-  .login-link {
+  .register-link {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 15px;
   }
   
-  .login-link a {
+  .register-link a {
     color: #007bff;
     text-decoration: none;
     font-weight: bold;
   }
   
-  .login-link a:hover {
+  .register-link a:hover {
     text-decoration: underline;
   }
   

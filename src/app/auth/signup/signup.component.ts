@@ -12,7 +12,7 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./signup.component.css'],
   imports: [FormsModule, RouterModule], 
 })
-export class RegisterComponent {
+export class SignupComponent {
   user = {
     nic: '',
     email: '',

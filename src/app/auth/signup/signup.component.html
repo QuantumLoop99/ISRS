@@ -1,5 +1,5 @@
 <div class="register-container">
-    <h2>Register</h2>
+    <h2>Sign Up</h2>
     <form (ngSubmit)="onRegister()" #registerForm="ngForm">
       
       <!-- NIC Input -->
@@ -61,7 +61,10 @@
   
       <!-- Login Link -->
       <p class="login-link">
-        Already have an account? <a routerLink="/login">Login here</a>
+        Already have an account? <a routerLink="/signin">Sign in here</a>
       </p>
     </form>
   </div>
+
+  <!-- app.component.html -->
+<router-outlet></router-outlet>
