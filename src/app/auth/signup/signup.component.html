@@ -1,0 +1,67 @@
+<div class="register-container">
+    <h2>Register</h2>
+    <form (ngSubmit)="onRegister()" #registerForm="ngForm">
+      
+      <!-- NIC Input -->
+      <div class="form-group">
+        <label for="nic">National Identity Card (NIC)</label>
+        <input
+          type="text"
+          id="nic"
+          name="nic"
+          class="form-control"
+          [(ngModel)]="user.nic"
+          required
+        />
+      </div>
+  
+      <!-- Email Input -->
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="form-control"
+          [(ngModel)]="user.email"
+          required
+        />
+      </div>
+  
+      <!-- Password Input -->
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          class="form-control"
+          [(ngModel)]="user.password"
+          required
+        />
+      </div>
+  
+      <!-- Confirm Password -->
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <input
+          type="password"
+          id="confirmPassword"
+          name="confirmPassword"
+          class="form-control"
+          [(ngModel)]="user.confirmPassword"
+          required
+        />
+      </div>
+  
+      <!-- Register Button -->
+      <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">
+        Register
+      </button>
+  
+      <!-- Login Link -->
+      <p class="login-link">
+        Already have an account? <a routerLink="/login">Login here</a>
+      </p>
+    </form>
+  </div>
