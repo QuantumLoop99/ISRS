@@ -3,8 +3,6 @@ import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
-
-
 @Component({
   selector: 'app-home',
   imports: [CommonModule, RouterModule],
@@ -19,25 +17,53 @@ export class HomeComponent implements OnInit {
     // Initialization logic can go here
   }
 
-  // Methods for handling user interactions
-  getStarted() {
-    console.log('Get Started button clicked');
-    // Add navigation or other logic here
+  // Navigation methods for quick links
+  apply() {
+    console.log('Apply button clicked');
+    // Navigate to application page
+    // this.router.navigate(['/apply']);
   }
 
-  learnMore() {
-    console.log('Learn More button clicked');
-    // Add navigation or modal display logic here
+  trackApplication() {
+    console.log('Track Application button clicked');
+    // Navigate to track application page
+    // this.router.navigate(['/track']);
+  }
+
+  login() {
+    console.log('Login button clicked');
+    // Navigate to login page
+    // this.router.navigate(['/login']);
+  }
+
+  // Footer navigation methods
+  navigateToPrivacyPolicy() {
+    console.log('Privacy Policy clicked');
+    // Navigate to privacy policy page
+    // this.router.navigate(['/privacy-policy']);
+  }
+
+  navigateToTerms() {
+    console.log('Terms of Service clicked');
+    // Navigate to terms page
+    // this.router.navigate(['/terms']);
+  }
+
+  navigateToFAQ() {
+    console.log('FAQ clicked');
+    // Navigate to FAQ page
+    // this.router.navigate(['/faq']);
+  }
+
+  navigateToContact() {
+    console.log('Contact Us clicked');
+    // Navigate to contact page
+    // this.router.navigate(['/contact']);
   }
 
   downloadPdf() {
     console.log('Download PDF button clicked');
     // Add download logic here
-  }
-
-  signIn() {
-    console.log('Sign In button clicked');
-    // Add authentication logic or navigation here
   }
 
 }
