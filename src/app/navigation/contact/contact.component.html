@@ -1,0 +1,126 @@
+<!-- Header Section -->
+<header class="header">
+  <div class="logo">QuickCert</div>
+  <nav class="navigation">
+    <a href="#" class="nav-link active">Home</a>
+    <a href="#" class="nav-link">Services</a>
+    <a href="/about" class="nav-link">About</a>
+    <a href="/contact" class="nav-link">Contact</a>
+    <a href="#" class="nav-link">FAQ</a>
+  </nav>
+  <button class="sign-in-button" (click)="goToRegister()">Sign In</button>
+</header>
+
+<section class="about-hero">
+  <div class="about-overlay">
+    <div class="about-content">
+      <h1>Contact <span>Us</span></h1>
+      <p>
+        We are committed to offering innovative solutions tailored to your needs.
+        Our team ensures quality, reliability, and satisfaction in every project.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+
+<section class="contact-container">
+  <div class="content-box contact-left">
+    <h2>Contact QuickCert Support</h2>
+    <p><i class="fas fa-envelope"></i> supportquickcert.lk</p>
+    <p><i class="fab fa-facebook"></i> Facebook: QuickCertOfficial</p>
+    <p><i class="fab fa-twitter"></i> Twitter: QuickCert</p>
+    <p><i class="fab fa-linkedin"></i> LinkedIn: QuickCert Solutions</p>
+    <p>Use the contact form to reach our support team. We’ll respond within 24 business hours.</p>
+    <p><strong>Service Hours:</strong> Mon–Fri, 9am–5pm IST</p>
+  </div>
+
+
+
+  <div class="contact-right">
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <input type="text" placeholder="Subject" required />
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">SEND YOUR MESSAGE</button>
+    </form>
+  </div>
+</section>
+
+<section class="subscribe-section">
+  <div class="section-header">
+    <h2>Regular <span>Questions</span></h2>
+    <div class="underline"></div>
+    <p>We are proud to be supported by a strong network of companies that enhance our capabilities and reach.</p>
+  </div>
+</section>
+
+
+<!--drop down box-->
+<div class="faq-grid">
+  <div *ngFor="let faq of faqs; let i = index" class="faq-item">
+    <button (click)="toggle(i)">
+      {{ faq.question }}
+    </button>
+    <div *ngIf="faq.open" class="faq-answer">
+      {{ faq.answer }}
+    </div>
+  </div>
+</div>
+
+
+
+<div class="footer">
+  <div class="footer-section">
+    <h3>About Us</h3>
+    <ul>
+      <li><a href="#">Who We Are</a></li>
+      <li><a href="#">Board of Directors</a></li>
+      <li><a href="#">Corporate Management</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h3>Quick Links</h3>
+    <ul>
+      <li><a href="#">Tender Notices</a></li>
+      <li><a href="#">Properties For Sale</a></li>
+      <li><a href="#">Latest Financial Results</a></li>
+    </ul>
+  </div>
+
+  <div class="footer-section">
+    <h3>People's Bank</h3>
+    <address>
+      No.75, Sir Chittampalam A. Gardiner Mawatha,<br>
+      Colombo 2, Sri Lanka.<br><br>
+      Telephone: +94 (0)11 2481481<br>
+      Call Center: 1961<br>
+      Email: <a href="mailto:info@peoplesbank.lk">infopeoplesbank.lk</a><br>
+      SWIFT Code: PSBKLKLX
+    </address>
+  </div>
+
+  <div class="footer-section social-icons">
+    <h3>Connect with Us</h3>
+    <a href="#"><img src="/assets/facebook.svg" alt="Facebook"></a>
+    <a href="#"><img src="/assets/twitter.svg" alt="Twitter"></a>
+    <a href="#"><img src="/assets/linkedin.svg" alt="LinkedIn"></a>
+  </div>
+</div>
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="copyright">© 2025 QuickCert - Divisional Secretariat of Sri Lanka</div>
+  <div class="footer-links">
+    <a href="#">Privacy Policy</a>
+    <a href="#">Terms of Service</a>
+    <a href="#">Contact Us</a>
+  </div>
+</footer>
+
+
+
